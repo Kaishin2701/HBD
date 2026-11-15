@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6f2">
+  <meta name="description" content="Một vũ trụ nhỏ dành cho Lê Như Hoài. Chúc mừng sinh nhật chị Tợp, 15.11.2026.">
+  <title>Một vũ trụ nhỏ dành cho Tợp · 15.11.2026</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
+  <script src="photos.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="effects.js" defer></script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <canvas id="universe" aria-hidden="true"></canvas>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Katie — home">k<span class="brand-star">✧</span></a>
+    <span class="header-date">A LITTLE BIRTHDAY UNIVERSE <span>·</span> 15.11.2026</span>
+    <div class="tools"><button id="sound" class="sound" aria-pressed="false" aria-label="Bật nhạc nền">♫ <span data-i18n="soundOff">Âm thanh tắt</span></button><div class="languages" aria-label="Language"><button data-lang="vi" class="active" aria-pressed="true">VI</button><span>/</span><button data-lang="en" aria-pressed="false">EN</button></div></div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-halo" aria-hidden="true"></div>
+      <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+      <div class="hero-photos" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> <span data-i18n="heroEyebrow">NGÀY HÔM NAY THUỘC VỀ CHỊ</span></p>
+        <h1><span data-i18n="heroTitle">Một vũ trụ nhỏ</span><br><em data-i18n="heroName">dành cho Tợp.</em><span class="title-star" aria-hidden="true">✧</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">Là Katie khi đi làm, là Tợp khi về nhà.<br>Còn hôm nay, chị là điều đặc biệt nhất ở đây.</p>
+        <a class="pill" href="#three-words"><span data-i18n="begin">Mở món quà của chị</span><span aria-hidden="true">↗</span></a>
+        <p class="birthday-caption">LÊ NHƯ HOÀI <span>✧</span> 15 NOVEMBER 2026</p>
+      </div>
+      <div class="hero-bottom"><span data-i18n="madeWith">MỘT CHÚT PHÉP MÀU, RẤT NHIỀU YÊU THƯƠNG</span><a href="#three-words"><span data-i18n="scroll">CUỘN ĐỂ KHÁM PHÁ</span> ↓</a><span>01 — 04</span></div>
+    </section>
+    <section class="words-intro section-pad" id="three-words">
+      <p class="eyebrow reveal" data-i18n="chapterOne">01 / NHỮNG ĐIỀU LÀM NÊN CHỊ</p>
+      <h2 class="reveal" data-i18n="wordsTitle">Nếu chọn ba từ,<br>em sẽ chọn…</h2>
+      <p class="section-description reveal" data-i18n="wordsSubtitle">Ba điều thật đẹp mà em muốn dành cho chị, hôm nay và cả những ngày sau.</p>
+    </section>
+    <div id="qualities"></div>
+    <section class="letter-section section-pad" id="letter">
+      <div class="letter-heading reveal"><p class="eyebrow" data-i18n="chapterTwo">02 / GỬI CHỊ, Ở TUỔI MỚI</p><h2 data-i18n="letterTitle">Thêm một tuổi.<br><em>Thêm nhiều điều đẹp.</em></h2><div class="little-star">✧</div><p data-i18n="letterAside">Có những điều ngày thường ít nói,<br>nên hôm nay em viết ở đây.</p></div>
+      <article class="letter reveal"><span class="letter-date">15 / 11 / 2026</span><h3 data-i18n="letterGreeting">Chúc mừng sinh nhật chị Tợp!</h3><div id="letter-body"></div><p class="signature" data-i18n="signature">Thương chị,<br><em>Em của chị ♡</em></p></article>
+    </section>
+    <section class="wish-section section-pad" id="wish"><p class="eyebrow reveal" data-i18n="wishEyebrow">MỘT KHOẢNH KHẮC CHỈ DÀNH CHO CHỊ</p><h2 class="reveal" data-i18n="wishTitle">Nhắm mắt lại.<br><em>Ước một điều nhé.</em></h2><p class="reveal" data-i18n="wishSubtitle">Có một ngôi sao nhỏ đang đợi mang điều ước của chị đi.</p><p id="wish-message" role="status" data-i18n="wishHint">CHẠM VÀO NGÔI SAO ĐỂ GỬI ĐIỀU ƯỚC</p></section>
+    <section class="memories section-pad" id="memories"><div class="memories-heading reveal"><div><p class="eyebrow" data-i18n="memoriesEyebrow">NHỮNG MẢNH GHÉP LẤP LÁNH</p><h2 data-i18n="memoriesTitle">57 khoảnh khắc.<br><em>Một chị Tợp rất riêng.</em></h2></div><p data-i18n="memoriesSubtitle">Mỗi tấm ảnh là một ngôi sao nhỏ.<br>Chạm để ngắm nhìn gần hơn.</p></div><div id="gallery" class="gallery"></div><button id="more-photos" class="pill"><span data-i18n="morePhotos">Xem tất cả 57 khoảnh khắc</span><span>＋</span></button></section>
+  </main>
+  <footer><span class="footer-star">✧</span><p data-i18n="footerTitle">Happy Birthday, Katie.</p><p class="footer-note" data-i18n="footerNote">Cả một vũ trụ yêu thương, dành cho chị Tợp.</p><div class="footer-bottom"><span>15.11.2026 · LÊ NHƯ HOÀI</span><a href="#home" data-i18n="backTop">VỀ ĐẦU TRANG ↑</a><span>MADE WITH LOVE ♡</span></div></footer>
+  <dialog id="lightbox"><button class="lightbox-close" aria-label="Đóng">×</button><button class="lightbox-prev" aria-label="Ảnh trước">←</button><figure><img alt=""><figcaption></figcaption></figure><button class="lightbox-next" aria-label="Ảnh tiếp">→</button></dialog>
+</body>
+</html>
